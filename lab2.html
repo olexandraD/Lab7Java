@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2 JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Лабораторна робота №2 JavaScript</h1>
+            <h2>Виконала Джаббарова Олександра КН-31</h2>
+            <h2>Варіант №10</h2>
+        </div>
+    </header>
+
+    <main>
+        <nav class="menu">
+            <ul>
+                <li><a href="lab1.html">Лабораторна робота №1</a></li>
+                <li><a href="lab2.html">Лабораторна робота №2</a></li>
+                <li><a href="lab3.html">Лабораторна робота №3</a></li>
+            </ul>
+        </nav>
+        <section id="lab2">
+            <h2>Завдання на лабораторну роботу:</h2>
+            <div class="p">
+                <p>1. У формі є список жанрів та поля для введення назви книги та автора,
+                    після натискання Enter при введені автора сформуйте списки книг по кожному
+                    з жанрів.</p>
+                <p>2. Дана таблиця, при натисканні на кнопку перетворити її у список списків де головним списком будуть рядки, а вкладеним списком їх елементи.</p>
+            </div>
+            
+            <h3>Завдання 1: Списки книг за жанрами</h3>
+            <form id="bookForm">
+                <select id="genreSelect">
+                    <option value="fiction">Drama</option>
+                    <option value="non-fiction">Fantasy</option>
+                    <option value="science">Science</option>
+                    <option value="fantasy">Detective</option>
+                </select>
+                <input type="text" id="bookTitle" placeholder="Book Title" required>
+                <input type="text" id="bookAuthor" placeholder="Author" required>
+            </form>
+            <div id="bookLists"></div>
+
+            <h3>Завдання 2: Перетворення таблиці</h3>
+            <table id="dataTable">
+                <tr>
+                    <td>Cell 11</td>
+                    <td>Cell 12</td>
+                    <td>Cell 13</td>
+                </tr>
+                <tr>
+                    <td>Cell 21</td>
+                    <td>Cell 22</td>
+                    <td>Cell 23</td>
+                </tr>
+                <tr>
+                    <td>Cell 31</td>
+                    <td>Cell 32</td>
+                    <td>Cell 33</td>
+                </tr>
+            </table>
+            <button class="button" id="convertTableBtn">Перетворити таблицю</button>
+            <div id="listContainer"></div>
+        </section>
+    </main>
+    <script src="script2.js"></script> 
+</body>
+</html>

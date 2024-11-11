@@ -1,0 +1,145 @@
+@import url(header.css);
+@import url(menu.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1a1919;
+}
+
+.p {
+    background-color: rgb(250, 196, 196);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3b893f;
+}
+
+.conference-info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.conference-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.conference-block.active {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.conference-block h4 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.conference-block p {
+    margin: 5px 0;
+}
+
+.conference-block ul {
+    padding-left: 20px;
+}
+
+.active-section {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .conference-block {
+        width: 100%;
+    }
+}
+
+#bookForm {
+    margin-bottom: 20px;
+}
+
+#bookForm select,
+#bookForm input {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#bookLists {
+    margin-top: 20px;
+}
+
+#bookLists h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+#bookLists ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#dataTable {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#listContainer ol {
+    padding-left: 20px;
+}
+
+#listContainer ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
